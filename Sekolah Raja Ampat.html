@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d9c949b46567790b47ac2dae14cdf87 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d9c949b46567790b47ac2dae14cdf87" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d9c949b46567790b47ac2dae14cdf87 = L.map(
+                "map_2d9c949b46567790b47ac2dae14cdf87",
+                {
+                    center: [-0.4165, 130.851],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac3d037659863049325a9f946cfab535 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2d9c949b46567790b47ac2dae14cdf87);
+        
+    
+            var heat_map_963bd77c45a16adc4003d4d49d430545 = L.heatLayer(
+                [[-0.4264, 130.8744], [-0.4193, 130.8531], [-0.4165, 130.8512]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_2d9c949b46567790b47ac2dae14cdf87);
+        
+    
+            var marker_cluster_a3e899324bd25ed9996c7c88dbc5c340 = L.markerClusterGroup(
+                {}
+            );
+            map_2d9c949b46567790b47ac2dae14cdf87.addLayer(marker_cluster_a3e899324bd25ed9996c7c88dbc5c340);
+        
+    
+            var marker_4c1e6f8d8e864a5f116bb09b4d34667e = L.marker(
+                [-0.4264, 130.8744],
+                {}
+            ).addTo(marker_cluster_a3e899324bd25ed9996c7c88dbc5c340);
+        
+    
+        var popup_5c417209680314fed77cdea0d27b17f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8834316f7b9b12a331e0bc2cec517a3 = $(`<div id="html_a8834316f7b9b12a331e0bc2cec517a3" style="width: 100.0%; height: 100.0%;">SMA 9 Raja Ampat:</div>`)[0];
+                popup_5c417209680314fed77cdea0d27b17f1.setContent(html_a8834316f7b9b12a331e0bc2cec517a3);
+            
+        
+
+        marker_4c1e6f8d8e864a5f116bb09b4d34667e.bindPopup(popup_5c417209680314fed77cdea0d27b17f1)
+        ;
+
+        
+    
+    
+            var marker_13a6471f834336bd678ac97bc29bb0c4 = L.marker(
+                [-0.4193, 130.8531],
+                {}
+            ).addTo(marker_cluster_a3e899324bd25ed9996c7c88dbc5c340);
+        
+    
+        var popup_c9ba2912ec67f81dbe583547c2703973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdd33f50918b244c70788669f1a790d2 = $(`<div id="html_fdd33f50918b244c70788669f1a790d2" style="width: 100.0%; height: 100.0%;">SMA Negeri 1 Raja Ampat:</div>`)[0];
+                popup_c9ba2912ec67f81dbe583547c2703973.setContent(html_fdd33f50918b244c70788669f1a790d2);
+            
+        
+
+        marker_13a6471f834336bd678ac97bc29bb0c4.bindPopup(popup_c9ba2912ec67f81dbe583547c2703973)
+        ;
+
+        
+    
+    
+            var marker_410e86683f5b9c74ba8696677073410f = L.marker(
+                [-0.4165, 130.8512],
+                {}
+            ).addTo(marker_cluster_a3e899324bd25ed9996c7c88dbc5c340);
+        
+    
+        var popup_427fd2138da6b34fb6b74913c3a31745 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_964d8f2da37f02ae144a90f2d3bf9594 = $(`<div id="html_964d8f2da37f02ae144a90f2d3bf9594" style="width: 100.0%; height: 100.0%;">SMK Negeri 2 Raja Ampat:</div>`)[0];
+                popup_427fd2138da6b34fb6b74913c3a31745.setContent(html_964d8f2da37f02ae144a90f2d3bf9594);
+            
+        
+
+        marker_410e86683f5b9c74ba8696677073410f.bindPopup(popup_427fd2138da6b34fb6b74913c3a31745)
+        ;
+
+        
+    
+</script>
+</html>
